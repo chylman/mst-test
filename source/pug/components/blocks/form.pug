@@ -1,0 +1,23 @@
+mixin form()
+  form(action="#", metod="post").form
+    p.form__text
+    ul.form__list
+      li.form__item
+        +custom-input({inputName: "name", inputPlaceholder: "Name", inputId: "name", inputRequired: "true"})
+      li.form__item
+        +custom-input({
+          inputName: "email",
+          inputType: "email",
+          inputPlaceholder: "E-mail",
+          inputId: "email",
+          inputRequired: "true"
+        })
+      li.form__item
+        +custom-input({
+          inputName: "privacy-politic",
+          inputType: "checkbox",
+          inputLabel: "I accept Privacy policy",
+          inputId: "privacy-politic",
+          inputRequired: "true"
+        })
+    +btn({type: "submit", text: "Submit Form"})
