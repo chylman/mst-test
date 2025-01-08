@@ -1,10 +1,22 @@
 mixin intro()
-  .intro
-    //- вставлять блоки во внешний контейнер неверно
-    //- все блоки содержат в себе container без доп класса tutorial__wrapper
+  section.intro
     .container
-      p(style="margin-top: 40px;") Текст&nbsp;с&nbsp;мнемониками
-
-      p(style="margin-top: 40px;") Пример использования +img()
-      p(style="margin-bottom: 40px;")
-        +img("content", "placeholder", "png", 120, 120, "Пример")
+      .intro__content
+        h1.intro__title Lorem ipsum dolor sit amet
+        p.intro__text sed do eiusmod tempor 
+        ul.intro__list
+          li.intro__item
+            span.intro__item-icon
+              +icon("icon-check", 39, 37)
+            p.intro__item-text do <span>$10 000</span> consectetur elit
+          li.intro__item
+            span.intro__item-icon
+              +icon("icon-check", 39, 37)
+            p.intro__item-text <span>30%</span> sed do eiusmod tempor 
+          li.intro__item
+            span.intro__item-icon
+              +icon("icon-check", 39, 37)
+            p.intro__item-text do <span>17%</span> adipiscing elit sed do
+        +btn({href: "#", text: "order"})
+      .intro__img
+        +img("content", "img", "jpg", 763, 1009, "Изображение")

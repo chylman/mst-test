@@ -1,13 +1,22 @@
 .header {
-  padding: 28px 0;
+  position: relative;
+  padding: 0 3px;
+}
 
-  background-color: $color-neon-blue;
+.header .container {
+  display: flex;
+}
 
-  .container {
-    display: flex;
-  }
+.header__inner {
+  position: fixed;
+  display: flex;
+}
 
-  &__logo {
-    color: $color-default-white;
-  }
+.header__logo {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-default-white;
 }

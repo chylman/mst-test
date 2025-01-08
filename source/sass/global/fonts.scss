@@ -11,8 +11,9 @@
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
+  font-family: "Prata";
 
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
+  src: url("../fonts/prata-regular.woff2") format("woff2"),
+       url("../fonts/prata-regular.woff") format("woff");
 }

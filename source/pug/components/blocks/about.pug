@@ -1,0 +1,27 @@
+mixin about()
+  section.about
+    .container
+      .about__img
+        +img("content", "img", "jpg", 622, 724, "Изображение")
+      .about__content
+        .about__content-wrap
+          ul.about__list
+            li.about__item
+              span.about__item-icon
+                +icon("icon-bull", 58, 47)
+              p.about__item-text Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor 
+            li.about__item
+              span.about__item-icon
+                +icon("icon-bull", 58, 47)
+              p.about__item-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            li.about__item
+              span.about__item-icon
+                +icon("icon-bull", 58, 47)
+              p.about__item-text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            li.about__item
+              span.about__item-icon
+                +icon("icon-bull", 58, 47)
+              p.about__item-text Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor 
+          +btn({href: "#", text: "order"})
+      .about__img
+        +img("content", "img", "jpg", 622, 724, "Изображение")

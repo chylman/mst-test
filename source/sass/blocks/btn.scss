@@ -1,12 +1,22 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 50px;
 
-  color: $color-default-white;
+  color: $color-nero;
 
-  background-color: $color-neon-blue;
+  background-color: $color-default-white;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
+
+  font-family: $ff-arial;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 
   transition: opacity $trans-default;
 
